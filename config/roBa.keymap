@@ -86,7 +86,7 @@
 &mt LEFT_WIN UNDERSCORE  &kt COMMA  &kt PERIOD  &lt_to_layer_0 1 TAB  &lt 2 SPACE  &lt_to_layer_0 3 INTERNATIONAL_2      &mt RIGHT_WIN LANGUAGE_6  &kp BACKSPACE                               &lt 3 ESC
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
         FUNCTION {
@@ -115,7 +115,7 @@
 &trans  &trans  &trans  &trans  &trans   &trans      &kp RCTRL  &trans                                                 &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+            sensor-bindings = <&inc_dec_kp LC(K_SCROLL_UP) LC(K_SCROLL_DOWN)>;
         };
 
         MOUSE {
