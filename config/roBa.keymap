@@ -65,8 +65,6 @@ macros {};
 
 behaviors {};
 
-macros {};
-
 behaviors {};
 keymap {
         compatible = "zmk,keymap";
