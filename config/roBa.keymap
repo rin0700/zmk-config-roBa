@@ -63,6 +63,15 @@
     behaviors {
     };
 
+    macros {
+    to_layer_0: to_layer_0 {
+        compatible = "zmk,behavior-macro";
+        label = "TO_LAYER_0";
+        bindings = <&to 0>;
+    };
+};
+
+
     keymap {
         compatible = "zmk,keymap";
 
