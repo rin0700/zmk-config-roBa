@@ -82,18 +82,22 @@ behaviors {
 macros {};
 
 behaviors {};
+
+macros {};
+
+behaviors {};
 keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-&kp Q                    &kp W      &kp E       &kp R                 &kp T                                                                        &kp Y          &kp U  &kp I      &kp O      &mt RIGHT_ALT P
-&kp A                    &kp S      &kp D       &kp F                 &kp G        &none                                 &kp MINUS                 &kp H          &kp J  &kp K      &kp L      &kp ENTER
-&mt LEFT_SHIFT Z         &kp X      &kp C       &kp V                 &kp B        &kp COLON                             &kp SEMICOLON             &kp N          &kp M  &mkp LCLK  &mkp RCLK  &mt MINUS RIGHT_SHIFT
-&mt LEFT_WIN UNDERSCORE  &kt COMMA  &kt PERIOD  &lt_to_layer_0 1 TAB  &lt 2 SPACE  &lt_to_layer_0 3 INTERNATIONAL_2      &mt RIGHT_WIN LANGUAGE_6  &kp BACKSPACE                               &lt 3 ESC
+&kp Q                    &kp W      &kp E       &kp R      &kp T                                                                          &kp Y          &kp U  &kp I      &kp O      &mt RIGHT_ALT P
+&kp A                    &kp S      &kp D       &kp F      &kp G        &none                          &kp MINUS                          &kp H          &kp J  &kp K      &kp L      &kp ENTER
+&mt LEFT_SHIFT Z         &kp X      &kp C       &kp V      &kp B        &kp COLON                      &kp SEMICOLON                      &kp N          &kp M  &mkp LCLK  &mkp RCLK  &mt MINUS RIGHT_SHIFT
+&mt LEFT_WIN UNDERSCORE  &kt COMMA  &kt PERIOD  &lt 1 TAB  &lt 2 SPACE  &lt 3 LANG_ZENKAKUHANKAKU      &mt RIGHT_WIN LANG_ZENKAKUHANKAKU  &kp BACKSPACE                               &lt 3 ESC
 >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
 
         FUNCTION {
@@ -152,6 +156,12 @@ sensor-bindings = <&encoder_msc_down_up>;
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
 >;
-        };
+        };layer_7 {
+         bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+>;};
     };
 };
