@@ -60,13 +60,10 @@
     behaviors {
     };
 
-    
-macros {};
+    behaviors {
+    };
 
-behaviors {};
-
-behaviors {};
-keymap {
+    keymap {
         compatible = "zmk,keymap";
 
         default_layer {
@@ -75,7 +72,7 @@ keymap {
 &kp A                    &kp S      &kp D       &kp F      &kp G        &none                          &kp MINUS                          &kp H          &kp J  &kp K      &kp L      &kp ENTER
 &mt LEFT_SHIFT Z         &kp X      &kp C       &kp V      &kp B        &kp COLON                      &kp SEMICOLON                      &kp N          &kp M  &mkp LCLK  &mkp RCLK  &mt MINUS RIGHT_SHIFT
 &mt LEFT_WIN UNDERSCORE  &kt COMMA  &kt PERIOD  &lt 1 TAB  &lt 2 SPACE  &lt 3 LANG_ZENKAKUHANKAKU      &mt RIGHT_WIN LANG_ZENKAKUHANKAKU  &kp BACKSPACE                               &lt 3 ESC
->;
+            >;
 
             // sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
@@ -86,9 +83,7 @@ keymap {
 &kp AT_SIGN  &kp HASH   &kp ASTERISK  &kp PLUS         &kp EQUAL     &trans      &trans  &kp UNDERSCORE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON     &kp COLON
 &kp GRAVE    &kp TILDE  &trans        &kt EXCLAMATION  &kp QUESTION  &trans      &trans  &kp PIPE        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES
 &trans       &trans     &trans        &trans           &trans        &trans      &trans  &trans                                                                         &trans
->;
-
-sensor-bindings = <&encoder_msc_down_up>;
+            >;
         };
 
         NUM {
@@ -97,7 +92,7 @@ sensor-bindings = <&encoder_msc_down_up>;
 &kp KP_NUMBER_0  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans  &trans              &kp UNDERSCORE  &kp EXCLAMATION  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN
 &trans           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans  &kp LEFT_SHIFT      &trans          &kp LA(LEFT)     &kp LA(RIGHT)   &mkp LCLK       &mkp RCLK        &mkp MB3
 &trans           &trans           &trans           &trans           &trans  &trans              &trans          &trans                                                            &trans
->;
+            >;
         };
 
         ARROW {
@@ -106,7 +101,7 @@ sensor-bindings = <&encoder_msc_down_up>;
 &trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans      &trans     &trans         &trans  &kp LG(TAB)  &kp F13            &trans
 &trans  &kp F1  &kp F2  &kp F3  &kt F10  &trans      &trans     &kp LG(LS(S))  &trans  &trans       &trans             &trans
 &trans  &trans  &trans  &trans  &trans   &trans      &kp RCTRL  &trans                                                 &trans
->;
+            >;
 
             sensor-bindings = <&inc_dec_kp LC(K_SCROLL_UP) LC(K_SCROLL_DOWN)>;
         };
@@ -117,7 +112,7 @@ sensor-bindings = <&encoder_msc_down_up>;
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
->;
+            >;
         };
 
         SCROLL {
@@ -126,7 +121,7 @@ sensor-bindings = <&encoder_msc_down_up>;
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
->;
+            >;
         };
 
         layer_6 {
@@ -135,13 +130,16 @@ sensor-bindings = <&encoder_msc_down_up>;
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans        &trans        &trans        &trans        &trans
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
->;
-        };layer_7 {
-         bindings = <
+            >;
+        };
+
+        layer_7 {
+            bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
->;};
+            >;
+        };
     };
 };
