@@ -117,7 +117,7 @@
 &trans  &trans  &trans  &trans  &trans   &trans      &kp RCTRL  &kp BACKSPACE                                          &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(K_SCROLL_UP) LC(K_SCROLL_DOWN)>;
+            sensor-bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>, <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
         };
 
         MOUSE {
