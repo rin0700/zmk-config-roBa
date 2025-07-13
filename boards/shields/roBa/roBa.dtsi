@@ -87,8 +87,6 @@
             compatible = "zmk,behavior-input-two-axis";
             label = "MOUSE_SCROLL";
             #sensor-binding-cells = <1>;
-            param1 = <0>;
-            param2 = <0>;
         };
     };
 
