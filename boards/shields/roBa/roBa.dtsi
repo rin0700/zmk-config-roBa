@@ -86,7 +86,7 @@
         mouse_scroll: mouse_scroll {
             compatible = "zmk,behavior-input-two-axis";
             label = "MOUSE_SCROLL";
-            #sensor-binding-cells = <1>;
+            sensor-binding-cells = <1>;
         };
     };
 
