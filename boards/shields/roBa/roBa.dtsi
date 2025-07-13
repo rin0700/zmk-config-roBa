@@ -82,6 +82,14 @@
         >;
     };
 
+    behaviors {
+        mouse_scroll: mouse_scroll {
+            compatible = "zmk,behavior-sensor-scroll";
+            label = "MOUSE_SCROLL";
+            #sensor-binding-cells = <1>;
+        };
+    };
+
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
         label = "KSCAN";
