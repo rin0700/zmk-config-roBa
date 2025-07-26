@@ -79,7 +79,20 @@
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
         bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-            tap-ms = <30>;
+            tap-ms = <200>;
+        };
+        scroll_stable: scroll_stable {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&kp PAGE_DOWN>, <&kp PAGE_UP>;
+            tap-ms = <150>;
+        };
+
+        scroll_line: scroll_line {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&kp DOWN>, <&kp UP>;
+            tap-ms = <100>;
         };
     };
 
@@ -94,7 +107,7 @@
 &kp LEFT_WIN  &kp PERIOD  &kp COMMA  &lt_to_layer_0 1 TAB  &lt 2 SPACE  &lt_to_layer_0 3 LANGUAGE_2      &mt RCTRL LANGUAGE_1  &kp BACKSPACE                               &lt 3 ESC
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&scroll_stable>;
         };
 
         kogou {
