@@ -3,7 +3,7 @@
 #include <dt-bindings/zmk/pointing.h>
 
 //#define ZMK_MOUSE_POINTING_SCRL_VAL 100
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 100  // 5から10に変更（感度を上げる）
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 5  // 100から5に変更（感度を下げる）
 
 &mt {
     flavor = "balanced";
@@ -81,7 +81,7 @@
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-            tap-ms = <30>;
+            tap-ms = <5>;
         };
 
         scroll_encoder: scroll_encoder {
