@@ -3,7 +3,7 @@
 #include <dt-bindings/zmk/pointing.h>
 
 //#define ZMK_MOUSE_POINTING_SCRL_VAL 100
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 5
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 10  // 5から10に変更（感度を上げる）
 
 &mt {
     flavor = "balanced";
@@ -88,7 +88,7 @@
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&kp PAGE_DOWN>, <&kp PAGE_UP>;
-            tap-ms = <50>;
+            tap-ms = <80>;  // 50から80に変更（少し遅く）
         };
 
         scroll_encoder_smooth: scroll_encoder_smooth {
@@ -117,7 +117,7 @@
 &kp LEFT_WIN  &kp PERIOD  &kp COMMA  &lt_to_layer_0 1 TAB  &lt 2 SPACE  &lt_to_layer_0 3 LANGUAGE_2      &mt RCTRL LANGUAGE_1  &kp BACKSPACE                               &lt 3 ESC
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         kogou {
@@ -147,6 +147,26 @@
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+            >;
+        };
+
+        SCROLL {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+            >;
+
+            sensor-bindings = <&scroll_up_down>;
         };
     };
 };
