@@ -66,6 +66,13 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
+        chouon: chouon {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(U) &kp N3 &kp N0 &kp N1 &kp C &kp SPACE>;
+            label = "CHOUON";
+        };
     };
 
     behaviors {
@@ -94,7 +101,7 @@
             bindings = <
 &kp Q         &kp W      &kp E       &kp R                 &kp T                                                               &kp Y          &kp U  &kp I      &kp O      &mt RIGHT_ALT P
 &kp A         &kp S      &kp D       &kp F                 &kp G        &mkp MCLK                        &kp MINUS             &kp H          &kp J  &kp K      &kp L      &kp ENTER
-&kp Z         &kp X      &kp C       &kp V                 &kp B        &kp COLON                        &kp SEMICOLON         &kp N          &kp M  &mkp LCLK  &mkp RCLK  &mt RIGHT_SHIFT BACKSLASH
+&kp Z         &kp X      &kp C       &kp V                 &kp B        &kp COLON                        &kp SEMICOLON         &kp N          &kp M  &mkp LCLK  &mkp RCLK  &mt RIGHT_SHIFT SLASH
 &kp LEFT_WIN  &kp COMMA  &kp PERIOD  &lt_to_layer_0 1 TAB  &lt 2 SPACE  &lt_to_layer_0 3 LANGUAGE_2      &mt RCTRL LANGUAGE_1  &kp BACKSPACE                               &lt 3 ESC
             >;
 
