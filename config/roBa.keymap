@@ -8,9 +8,9 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 
 &mt {
-    flavor = "balanced";
-    quick-tap-ms = <150>;
-    tapping-term-ms = <250>;
+    flavor = "hold-preferred";
+    quick-tap-ms = <0>;
+    tapping-term-ms = <200>;
 };
 
 &trackball {
