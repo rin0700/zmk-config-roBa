@@ -83,9 +83,10 @@
             bindings = <
 &kp Q         &kp W      &kp E       &kp R                 &kp T                                                                  &kp Y                &kp U  &kp I      &kp O      &mt RIGHT_ALT P
 &kp A         &kp S      &kp D       &kp F                 &kp G        &mkp MCLK                        &kp MINUS                &kp H                &kp J  &kp K      &kp L      &kp ENTER
-&kp Z         &kp X      &kp C       &kp V                 &kp B        &kp LS(HOME)                     &kp LS(END)              &kp N                &kp M  &mkp LCLK  &mkp RCLK  &mt RIGHT_SHIFT MINUS
+&kp Z         &kp X      &kp C       &kp V                 &kp B        &kp LG(LEFT)                     &kp LG(RIGHT)            &kp N                &kp M  &mkp LCLK  &mkp RCLK  &mt RIGHT_SHIFT MINUS
 &kp LEFT_WIN  &kp COMMA  &kp PERIOD  &lt_to_layer_0 1 TAB  &lt 2 SPACE  &lt_to_layer_0 3 LANGUAGE_2      &mt LEFT_WIN LANGUAGE_1  &mt LCTRL BACKSPACE                               &lt 3 ESC
             >;
+
             sensor-bindings = <&scroll_up_down>;
         };
 
@@ -114,6 +115,7 @@
 &trans  &kp F1  &kp F2  &kp F3  &kp F12  &trans      &trans        &kp LC(LA(LEFT))  &kp LC(LA(RIGHT))  &kp LG(LS(LC(NUMBER_4)))  &kp LEFT_ALT  &kp TAB
 &trans  &trans  &trans  &trans  &trans   &trans      &kp RCTRL     &trans                                                                       &kp LG(L)
             >;
+
             sensor-bindings = <&scroll_up_down>;
         };
     };
